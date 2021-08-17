@@ -292,6 +292,9 @@
         <div class="credits">
             Designed by Mclord
         </div>
+
+        <br>
+        <img src="{{ asset('img/zuri.jpeg') }}" alt="Zuri Logo" height="150">
     </div>
 </footer><!-- End Footer -->
 
