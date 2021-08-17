@@ -21,7 +21,8 @@ class HomeController extends Controller
             'message' => ['string']
         ]);
 
-        Feedback::create($validatedValues);
+        $feedback = Feedback::create($validatedValues);
+        $feedback->sendContactFormFeedback();
 
         return redirect()->route('home')->with('success', 'Your feedback has been received, thank you!');
     }
